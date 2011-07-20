@@ -13,4 +13,10 @@ public class FizzBuzzTest {
 		FizzBuzz cut = new FizzBuzz();
 		assertThat(cut.say("1"), CoreMatchers.is("1"));
 	}
+
+	@Test
+	public void givenTwoWhenCallFizzbuzzThenTwoShouldBeReturned() throws Exception {
+		FizzBuzz cut = new FizzBuzz();
+		assertThat(cut.say("2"), CoreMatchers.is("2"));
+	}
 }
