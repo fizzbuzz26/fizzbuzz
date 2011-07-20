@@ -7,16 +7,20 @@ import org.junit.Test;
 
 
 public class FizzBuzzTest {
+	FizzBuzz cut = new FizzBuzz();
 
 	@Test
 	public void givenOneWhenCallFizzbuzzThenOneShouldBeReturned() throws Exception {
-		FizzBuzz cut = new FizzBuzz();
 		assertThat(cut.say("1"), CoreMatchers.is("1"));
 	}
 
 	@Test
 	public void givenTwoWhenCallFizzbuzzThenTwoShouldBeReturned() throws Exception {
-		FizzBuzz cut = new FizzBuzz();
 		assertThat(cut.say("2"), CoreMatchers.is("2"));
+	}
+
+	@Test
+	public void givenThreeWhenCallFizzbuzzThenFizzShouldBeReturned() throws Exception {
+		assertThat(cut.say("3"), CoreMatchers.is("Fizz"));
 	}
 }
