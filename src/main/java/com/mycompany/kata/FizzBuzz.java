@@ -11,6 +11,8 @@ public class FizzBuzz {
 			result = "Buzz";
 		if((Integer.parseInt(number) % 3 == 0) && (Integer.parseInt(number) % 5 == 0))
 			result = "FizzBuzz";
+		if(number.equals("Hello World"))
+			result = "omg";
 
 		return result;
 	}
