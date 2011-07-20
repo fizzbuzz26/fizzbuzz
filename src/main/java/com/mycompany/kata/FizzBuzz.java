@@ -13,6 +13,8 @@ public class FizzBuzz {
 			result = "FizzBuzz";
 		if(number.equals("Hello World"))
 			result = "omg";
+		if(number.equals("Hello World"))
+			result = "omg";
 
 		return result;
 	}
