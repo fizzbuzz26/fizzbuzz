@@ -28,4 +28,9 @@ public class FizzBuzzTest {
 	public void givenFiveWhenCallFizzbuzzThenBuzzShouldBeReturned() throws Exception {
 		assertThat(cut.say("5"), CoreMatchers.is("Buzz"));
 	}
+
+	@Test
+	public void givenSixWhenCallFizzbuzzThenFizzShouldBeReturned() throws Exception {
+		assertThat(cut.say("6"), CoreMatchers.is("Fizz"));
+	}
 }
